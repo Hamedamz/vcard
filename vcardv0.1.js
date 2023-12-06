@@ -11,7 +11,7 @@ function downloadToFile(content, filename, contentType) {
 
 const makeVCardVersion = () => `VERSION:3.0`;
 const makeVCardFormattedName = (name) => `FN:${name}`;
-const makeVCardName = (first_name, last_name) => `N:${first_name};${last_name};;;`;
+const makeVCardName = (first_name, last_name) => `N:${last_name};${first_name};;;`;
 const makeVCardOrg = (org) => `ORG:${org}`;
 const makeVCardTitle = (title) => `TITLE:${title}`;
 const makeVCardPhoto = (img) => `PHOTO;TYPE=JPEG;ENCODING=b:[${img}]`;
