@@ -1,4 +1,3 @@
-console.log("hi");
 function downloadToFile(content, filename, contentType) {
   const a = document.createElement('a');
   const file = new Blob([content], { type: contentType });
