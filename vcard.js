@@ -36,6 +36,6 @@ END:VCARD`;
   downloadToFile(vcard, `${texts[1]}_${texts[2]}.vcf`, 'text/vcard');
 }
 
-downloadEl = document.getElementsByName("button");
+downloadEl = document.querySelector("button.wixui-button");
 
 downloadEl.addEventListener('click', makeVCard);
